@@ -1,15 +1,15 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block title %}
 Добавление записи
 {% endblock %}
 
 {% block content %}
-<h1>Добавление записи</h1>
+<h1>Добавить автомобиль</h1>
 
-<form method="post" class="form-control">
-    <input type="text" name="title" placeholder="Введите марку автомобиля" class="form-control"><br>
-    <input type="text" name="text" placeholder="Введите модель автомобиля" class="form-control"><br>
-    <button class="btn btn-success" type="submit">Добавить</button>
+<form method="post">
+    <input type="text" name="title" placeholder="Марка автомобиля" class="form-control"><br>
+    <textarea name="text" placeholder="Описание автомобиля и условия аренды" class="form-control" rows="6"></textarea><br>
+    <button class="btn btn-success" type="submit">Опубликовать</button>
 </form>
 {% endblock %}
